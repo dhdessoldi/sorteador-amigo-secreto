@@ -1,0 +1,97 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__titulo {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    color: #4B69FDFC;
+  }
+  &__formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 32px 0;
+    gap: 32px;
+    select {
+      width: 476px;
+      height: 75px;
+      font-size: 25px;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      border: 2px solid #000000;
+      box-shadow: 4px 4px 0px #000000;
+      border-radius: 32px;
+    }
+    p {
+      font-size: 20px;
+      color: #444444;
+      text-align: center;
+
+    }
+    button {
+      height: 80px;
+      width: 227px;
+      border-radius: 37.5px;
+      background-color: #FE652B;
+      color: #FFFFFF;
+      font-family: 'Poppins', sans-serif;
+      font-size: 20px;
+      border: 2px solid #000000;
+      box-shadow: 4px 4px 0px #000000;
+      cursor: pointer;
+      &:hover {
+        background-color: rgba(75, 105, 253, 0.99);;
+      }
+    }
+  }
+  &__nome {
+    margin: 16px 0;
+    font-size: 25px;
+    text-align: center;
+    color: rgba(254, 101, 43, 0.99);
+    font-weight: 600;
+  }
+  &__imagem {
+    width: 150px;
+    height: 136.63px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    &__titulo {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    &__formulario {
+      margin: 24px 0;
+      gap: 32px;
+      select {
+        width: 328px;
+        height: 48px;
+        border: 1px solid #000000;
+        box-shadow: 2px 2px 0px #000000;
+        font-size: 20px;
+      }
+      p {
+        font-size: 18px;
+      }
+      button {
+        height: 60px;
+        width: 155px;
+        font-size: 16px;
+      }
+    }
+    &__nome {
+      font-size: 20px;
+    }
+    &__imagem {
+      width: 125px;
+      height: 113.5px;
+    }
+  }
+
+
+}
